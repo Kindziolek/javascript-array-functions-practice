@@ -52,10 +52,18 @@ console.log(nameAndHeights);
 
 //4. Get array of all first names
 
-
+const firstNames = characters.map(character => character.name.split(''[0]));
+console.log(firstNames);
 
 //***REDUCE***
 //1. Get total mass of all characters
+
+const totalMass = characters.reduce((acc, cur) => {
+    return acc + cur.mass;
+}, 0)
+
+console.log(totalMass);
+
 //2. Get total height of all characters
 //3. Get total number of characters by eye color
 //4. Get total number of characters in all the character names
