@@ -87,7 +87,18 @@ console.log(totalCharactersName);
 
 //***FILTER***
 //1. Get characters with mass greater than 100
+
+const greater100Characters = characters.filter(
+    (character) => character.mass > 100
+);
+console.log(greater100Characters);
+
 //2. Get characters with height less than 200
+
+const heightLess200 = characters.filter(
+    (character) => character.height < 200
+);
+console.log(heightLess200);
 //3. Get all male characters
 //4. Get all female characters
 
