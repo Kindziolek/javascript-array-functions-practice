@@ -77,10 +77,13 @@ const charactersByEyeColor = characters.reduce((acc, cur) => {
     } 
     return acc;
 }, {});
-
 console.log(charactersByEyeColor);
 
 //4. Get total number of characters in all the character names
+
+const totalCharactersName = characters.reduce((acc, cur) => acc + cur.name.length, 0);
+console.log(totalCharactersName);
+
 
 //***FILTER***
 //1. Get characters with mass greater than 100
