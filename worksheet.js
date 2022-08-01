@@ -49,7 +49,10 @@ const nameAndHeights = characters.map(characters => ({
     height: characters.height
 }))
 console.log(nameAndHeights);
+
 //4. Get array of all first names
+
+
 
 //***REDUCE***
 //1. Get total mass of all characters
