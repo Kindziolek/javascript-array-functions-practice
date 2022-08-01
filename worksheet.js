@@ -34,14 +34,21 @@ const characters = [
 //***MAP***
 //1. Get array of all names
 
-const names = characters.map((charakter) => charakter.name);
+const names = characters.map((character) => character.name);
 console.log(names);
 
 //2. Get array of all heights
 
-const heights = characters.map((charakter) => charakter.height);
+const heights = characters.map((character) => character.height);
 console.log(heights);
+
 //3. Get array of objects with just name and height properties
+
+const nameAndHeights = characters.map(characters => ({
+    name: characters.name, 
+    height: characters.height
+}))
+console.log(nameAndHeights);
 //4. Get array of all first names
 
 //***REDUCE***
