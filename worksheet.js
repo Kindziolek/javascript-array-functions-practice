@@ -134,6 +134,12 @@ const byName = characters.sort((a,b) => {
 console.log(byName);
 //4. Sort by gender
 
+const byGender = characters.sort((a, b) => {
+    if (a.gender === 'female') return -1;
+    return 1;
+})
+console.log(byGender);
+
 //***EVERY***
 //1. Does every character have blue eyes?
 //2. Does every character have mass more than 40?
