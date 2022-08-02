@@ -116,8 +116,22 @@ console.log(totalFemale);
 
 //***SORT***
 //1. Sort by mass
+
+const byMass = characters.sort((a, b) => a.mass - b.mass);
+console.log(byMass);
+
 //2. Sort by height
+
+const byHeight = characters.sort((a,b) => a.height - b.height);
+console.log(byHeight);
+
 //3. Sort by name
+
+const byName = characters.sort((a,b) => {
+    if(a.name < b.name) return -1;
+    return 1;
+})
+console.log(byName);
 //4. Sort by gender
 
 //***EVERY***
