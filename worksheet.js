@@ -109,7 +109,10 @@ console.log(totalMale);
 
 //4. Get all female characters
 
-
+const totalFemale = characters.filter(
+    (characters) => characters.gender === 'female'
+);
+console.log(totalFemale);
 
 //***SORT***
 //1. Sort by mass
